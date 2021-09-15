@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CryptoSwift (1.4.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - CryptoSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CryptoSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
+
+PODFILE CHECKSUM: 81b0996b0587d1c845690dd37cb502fb3377f85c
+
+COCOAPODS: 1.11.0

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mfq-a4-FZE">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mfq-a4-FZE">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-2j-IP8">
-                                <rect key="frame" x="7" y="85" width="361" height="582"/>
+                                <rect key="frame" x="7" y="65" width="361" height="602"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oee-IK-qYh">
                                     <size key="itemSize" width="175" height="190"/>
@@ -64,6 +62,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="u0E-2j-IP8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="C5u-a8-frS"/>
@@ -71,7 +70,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u0E-2j-IP8" secondAttribute="trailing" constant="7" id="NrL-ts-AfI"/>
                             <constraint firstItem="u0E-2j-IP8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="mzs-vJ-nT7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="g2c-CC-inz"/>
                     <connections>
@@ -86,19 +84,19 @@
         <scene sceneID="IdN-zQ-jHB">
             <objects>
                 <viewController id="HRz-tN-AZW" customClass="HeroViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X89-fY-Gn7">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="X89-fY-Gn7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-8f-9eb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="281"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-8f-9eb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="301"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="GKg-uX-ALN"/>
                                     <constraint firstAttribute="height" constant="281" id="c1l-Ce-LVl"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geC-Ze-zbO">
-                                <rect key="frame" x="6" y="69" width="363" height="34"/>
+                                <rect key="frame" x="6" y="49" width="363" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSx-Lr-xLN">
                                         <rect key="frame" x="12" y="7" width="343" height="21"/>
@@ -110,16 +108,17 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-ar-fFk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-ar-fFk">
                                 <rect key="frame" x="16" y="353.5" width="329" height="19.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="329" id="7D2-fF-lIn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="3an-mE-2GL"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3an-mE-2GL" firstAttribute="trailing" secondItem="8hj-8f-9eb" secondAttribute="trailing" id="4L9-Iw-0Rn"/>
@@ -133,7 +132,6 @@
                             <constraint firstItem="8hj-8f-9eb" firstAttribute="top" secondItem="geC-Ze-zbO" secondAttribute="bottom" constant="-39" id="qHC-sU-R10"/>
                             <constraint firstItem="8hj-8f-9eb" firstAttribute="leading" secondItem="3an-mE-2GL" secondAttribute="leading" id="vLv-Yo-5N4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3an-mE-2GL"/>
                     </view>
                     <connections>
                         <outlet property="desc" destination="mkc-ar-fFk" id="br4-wO-RQe"/>
@@ -151,7 +149,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mfq-a4-FZE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DkY-cC-Ds7">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -164,4 +162,9 @@
             <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

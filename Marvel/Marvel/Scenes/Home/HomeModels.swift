@@ -16,6 +16,7 @@ enum Home
   {
     struct Request
     {
+
     }
     struct Response
     {
